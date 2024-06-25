@@ -1,7 +1,7 @@
 import { Col, Drawer, Row, Button, Input } from "antd";
 import "./index.css";
 import { NavLink } from "react-router-dom";
-// import logo from "../../assets/img/4lCu2zih0ca.svg";
+import logo from "../../assets/logo.jpeg";
 import React, { useState } from "react";
 import {
   MenuFoldOutlined,
@@ -26,12 +26,12 @@ const Header = () => {
   console.log(setTop);
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: "white" }}>
         <div className="container">
           <Row style={{ padding: "12px 0" }}>
             <Col span={4} className="logo">
-              {/* <img src={logo} alt="" width={100} height={33} /> */}
-              <h6>logo</h6>
+              <img src={logo} alt="" width={50} height={40} />
+              {/* <h6>logo</h6> */}
             </Col>
             <Col span={16}>
               <div className="nav">

@@ -10,10 +10,20 @@ const Home = () => {
         <p style={{ padding: "1.2em 0" }}>
           Unstake hTON and receive TON and rewards
         </p>
-        <NavLink className="" to="/" style={{ padding: "0 10px" }}>
+        <NavLink
+          className={({ isActive }) =>
+            `nav_btn ${isActive ? "nav-active" : ""}`
+          }
+          to="/"
+        >
           Stake
         </NavLink>
-        <NavLink className="nav_link" to="/unstake">
+        <NavLink
+          className={({ isActive }) =>
+            `nav_btn ${isActive ? "nav-active" : ""}`
+          }
+          to="/unstake"
+        >
           DeFi
         </NavLink>
       </div>

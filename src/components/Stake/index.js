@@ -47,7 +47,7 @@ const Stake = () => {
   return (
     <div
       className="container"
-      style={{ display: "flex", justifyContent: "center" }}
+      style={{ display: "flex", justifyContent: "center", paddingTop: "2em" }}
     >
       <div className="st_ma">
         <Form>
@@ -71,7 +71,7 @@ const Stake = () => {
             }}
           >
             <Input
-              style={{ height: 50, fontSize: 20 }}
+              style={{ height: 50, fontSize: 20, marginTop: 10 }}
               prefix={<RadarChartOutlined />}
               value={inputValue}
               onChange={handleInputChange}

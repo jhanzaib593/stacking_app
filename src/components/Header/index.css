@@ -42,21 +42,21 @@
 }
 .h_btn2 {
   border-radius: 8px;
-  background: var(--Primary, #ff7e73) !important;
+  background: var(--Primary, #cae696) !important;
   box-shadow: 0px 0px 0px 0px rgba(23, 23, 23, 0.04),
     0px 2px 4px 0px rgba(23, 23, 23, 0.04),
     0px 7px 7px 0px rgba(23, 23, 23, 0.03),
     0px 15px 9px 0px rgba(23, 23, 23, 0.02),
     0px 27px 11px 0px rgba(23, 23, 23, 0.01),
     0px 42px 12px 0px rgba(23, 23, 23, 0);
-  color: white;
+  color: black;
   width: 130px;
   height: 44px;
 }
 .h_btn2:hover {
-  border: #ff7e73 !important;
-  background: var(--Primary, #ff7e73) !important;
-  color: rgb(255, 255, 255) !important;
+  border: #cae696 !important;
+  background: var(--Primary, #cae696) !important;
+  color: black !important;
 }
 @media only screen and (min-width: 100px) and (max-width: 991px) {
   .nav {
