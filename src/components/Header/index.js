@@ -30,7 +30,7 @@ const Header = () => {
         <div className="container">
           <Row style={{ padding: "12px 0" }}>
             <Col span={4} className="logo">
-              <img src={logo} alt="" width={50} height={40} />
+              <img src={logo} alt="" width={50} height={50} />
               {/* <h6>logo</h6> */}
             </Col>
             <Col span={16}>
