@@ -6,6 +6,7 @@ import Stake from "./components/Stake";
 import Unstake from "./components/Unstake";
 import DeFi from "./page/defi";
 import Referral from "./page/referral";
+import Main from "./page/main";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/referral",
     element: <Referral />,
+  },
+  {
+    path: "/main",
+    element: <Main />,
   },
 ]);
 function App() {

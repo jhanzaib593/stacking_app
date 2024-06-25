@@ -25,7 +25,9 @@ const Header = () => {
         <div className="container">
           <Row style={{ padding: "12px 0" }}>
             <Col span={4} className="logo">
-              <img src={logo} alt="" width={50} height={50} />
+              <NavLink to={"/main"}>
+                <img src={logo} alt="" width={50} height={50} />
+              </NavLink>
               {/* <h6>logo</h6> */}
             </Col>
             <Col span={16}>
@@ -57,7 +59,9 @@ const Header = () => {
               </div>
             </Col>
             <Col span={4} className="h_btn">
-              <Button className="h_btn2">Connect Wallet</Button>
+              <NavLink to={"/"}>
+                <Button className="h_btn2">Connect Wallet</Button>
+              </NavLink>
               {/* <Button className="h_btn2">Sign up</Button> */}
             </Col>
             <Col span={4} className="h_drawer">
