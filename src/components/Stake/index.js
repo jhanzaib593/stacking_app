@@ -205,10 +205,6 @@ const Stake = () => {
         </Col>
         <Col span={6}></Col>
       </Row>
-      {/* 
-      
-
-      */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Col, Drawer, Row, Button } from "antd";
+import { Col, Drawer, Row, Button, Affix } from "antd";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
@@ -18,10 +18,12 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
-
+  const [top, setTop] = React.useState(0);
+  console.log(setTop);
   return (
     <>
-      <div style={{ backgroundColor: "white" }}>
+      {/* <Affix offsetTop={top}> */}
+      <div style={{ backgroundColor: "white", marginTop: "-4.7em" }}>
         <div className="container">
           <Row style={{ padding: "12px 0" }}>
             <Col span={4} className="logo">
@@ -83,6 +85,7 @@ const Header = () => {
           </Row>
         </div>
       </div>
+      {/* </Affix> */}
     </>
   );
 };
