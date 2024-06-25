@@ -24,7 +24,7 @@ const Home = () => {
           }
           to="/unstake"
         >
-          DeFi
+          UnStake
         </NavLink>
       </div>
     </div>

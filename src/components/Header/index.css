@@ -14,10 +14,19 @@
   gap: 30px;
   line-height: 3;
   font-size: 16px;
-  /* justify-content: center; */
+  justify-content: center;
 }
 .nav_link {
   color: black !important;
+  padding: 0 8px;
+  border-radius: 10px;
+}
+.nav_link:hover {
+  background-color: #cae696;
+}
+.nav_active {
+  background-color: #9ccc3c;
+  color: white !important;
 }
 .h_btn {
   padding: 4px 0;

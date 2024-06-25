@@ -1,4 +1,4 @@
-import { Col, Drawer, Row, Button, Input } from "antd";
+import { Col, Drawer, Row, Button } from "antd";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
@@ -18,12 +18,7 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
-  const { Search } = Input;
 
-  const onSearch = (value, _e, info) => console.log(info?.source, value);
-
-  const [top, setTop] = React.useState(0);
-  console.log(setTop);
   return (
     <>
       <div style={{ backgroundColor: "white" }}>
@@ -35,13 +30,28 @@ const Header = () => {
             </Col>
             <Col span={16}>
               <div className="nav">
-                <NavLink className="nav_link">
-                  <HomeOutlined /> Stake
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) =>
+                    `nav_link ${isActive ? "nav_active" : ""}`
+                  }
+                >
+                  <HomeOutlined /> Home
                 </NavLink>
-                <NavLink className="nav_link">
+                <NavLink
+                  to={"/defi"}
+                  className={({ isActive }) =>
+                    `nav_link ${isActive ? "nav_active" : ""}`
+                  }
+                >
                   <UsergroupAddOutlined /> DeFi
                 </NavLink>
-                <NavLink className="nav_link">
+                <NavLink
+                  to={"/referral"}
+                  className={({ isActive }) =>
+                    `nav_link ${isActive ? "nav_active" : ""}`
+                  }
+                >
                   <YoutubeOutlined /> Referral
                 </NavLink>
               </div>
