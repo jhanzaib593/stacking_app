@@ -40,7 +40,7 @@ const Header = () => {
                     `nav_link ${isActive ? "nav_active" : ""}`
                   }
                 >
-                  <HomeOutlined /> Home
+                  <HomeOutlined /> Stake
                 </NavLink>
                 <NavLink
                   to={"/defi"}
@@ -62,7 +62,7 @@ const Header = () => {
             </Col>
             <Col span={4} className="h_btn">
               <NavLink to={"/"}>
-                <Button className="h_btn2">Connect Wallet</Button>
+                <Button className="h_btn2">Go To App</Button>
               </NavLink>
               {/* <Button className="h_btn2">Sign up</Button> */}
             </Col>
@@ -70,14 +70,29 @@ const Header = () => {
               <MenuFoldOutlined onClick={showDrawer} />
               <Drawer onClose={onClose} open={open}>
                 <div className="nav_d">
-                  <NavLink className="nav_link nav_link_d">
-                    <HomeOutlined />
+                  <NavLink
+                    to={"/"}
+                    className={({ isActive }) =>
+                      `nav_link ${isActive ? "nav_active" : ""}`
+                    }
+                  >
+                    <HomeOutlined /> Stake
                   </NavLink>
-                  <NavLink className="nav_link nav_link_d">
-                    <UsergroupAddOutlined />
+                  <NavLink
+                    to={"/defi"}
+                    className={({ isActive }) =>
+                      `nav_link ${isActive ? "nav_active" : ""}`
+                    }
+                  >
+                    <UsergroupAddOutlined /> DeFi
                   </NavLink>
-                  <NavLink className="nav_link nav_link_d">
-                    <YoutubeOutlined />
+                  <NavLink
+                    to={"/referral"}
+                    className={({ isActive }) =>
+                      `nav_link ${isActive ? "nav_active" : ""}`
+                    }
+                  >
+                    <YoutubeOutlined /> Referral
                   </NavLink>
                 </div>
               </Drawer>
