@@ -7,18 +7,23 @@ import Unstake from "./components/Unstake";
 import DeFi from "./page/defi";
 import Referral from "./page/referral";
 import Main from "./page/main";
+import Home from "./page/home";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Main />,
+  },
+  {
+    path: "/app",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "", // Relative path for the default child
         element: <Stake />,
       },
       {
-        path: "/unstake",
+        path: "unstake", // Relative path for the unstake child
         element: <Unstake />,
       },
     ],
@@ -31,11 +36,8 @@ const router = createBrowserRouter([
     path: "/referral",
     element: <Referral />,
   },
-  {
-    path: "/main",
-    element: <Main />,
-  },
 ]);
+
 function App() {
   return (
     <div>

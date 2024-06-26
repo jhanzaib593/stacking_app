@@ -1,0 +1,15 @@
+.banner {
+  background-image: url(../../assets/cf91a3706ff339b470a2768efa66a326.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 600px; */
+}
+.banner_Wapper {
+  background-color: rgba(237, 251, 245, 0.94);
+  /* opacity: 0.65; */
+  height: 100%;
+}
+.r_ba {
+  padding: 5em;
+}

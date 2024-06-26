@@ -1,7 +1,7 @@
 import { Col, Drawer, Row, Button, Affix } from "antd";
 import "./index.css";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/LOGOsad 1.png";
 import React, { useState } from "react";
 import {
   MenuFoldOutlined,
@@ -23,11 +23,12 @@ const Header = () => {
   return (
     <>
       {/* <Affix offsetTop={top}> */}
-      <div style={{ backgroundColor: "white", marginTop: "-4.7em" }}>
+      <div>
+        {/* <div style={{ backgroundColor: "white" }}> */}
         <div className="container">
           <Row style={{ padding: "12px 0" }}>
             <Col span={4} className="logo">
-              <NavLink to={"/main"}>
+              <NavLink to={"/"}>
                 <img src={logo} alt="" width={50} height={50} />
               </NavLink>
               {/* <h6>logo</h6> */}
@@ -40,7 +41,15 @@ const Header = () => {
                     `nav_link ${isActive ? "nav_active" : ""}`
                   }
                 >
-                  <HomeOutlined /> Stake
+                  Home
+                </NavLink>
+                <NavLink
+                  to={"/app"}
+                  className={({ isActive }) =>
+                    `nav_link ${isActive ? "nav_active" : ""}`
+                  }
+                >
+                  Stake
                 </NavLink>
                 <NavLink
                   to={"/defi"}
@@ -48,7 +57,7 @@ const Header = () => {
                     `nav_link ${isActive ? "nav_active" : ""}`
                   }
                 >
-                  <UsergroupAddOutlined /> DeFi
+                  DeFi
                 </NavLink>
                 <NavLink
                   to={"/referral"}
@@ -56,12 +65,12 @@ const Header = () => {
                     `nav_link ${isActive ? "nav_active" : ""}`
                   }
                 >
-                  <YoutubeOutlined /> Referral
+                  Referral
                 </NavLink>
               </div>
             </Col>
             <Col span={4} className="h_btn">
-              <NavLink to={"/"}>
+              <NavLink to={"/app"}>
                 <Button className="h_btn2">Go To App</Button>
               </NavLink>
               {/* <Button className="h_btn2">Sign up</Button> */}

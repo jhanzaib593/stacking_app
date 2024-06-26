@@ -14,7 +14,8 @@ const Home = () => {
           className={({ isActive }) =>
             `nav_btn ${isActive ? "nav-active" : ""}`
           }
-          to="/"
+          to="/app"
+          end // Add `end` to match exactly the "/app" route
         >
           Stake
         </NavLink>
@@ -22,7 +23,7 @@ const Home = () => {
           className={({ isActive }) =>
             `nav_btn ${isActive ? "nav-active" : ""}`
           }
-          to="/unstake"
+          to="/app/unstake"
         >
           UnStake
         </NavLink>

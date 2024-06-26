@@ -51,7 +51,7 @@
 }
 .h_btn2 {
   border-radius: 8px;
-  background: var(--Primary, #cae696) !important;
+  background: var(--Primary, #9ccc3c) !important;
   box-shadow: 0px 0px 0px 0px rgba(23, 23, 23, 0.04),
     0px 2px 4px 0px rgba(23, 23, 23, 0.04),
     0px 7px 7px 0px rgba(23, 23, 23, 0.03),

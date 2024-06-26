@@ -133,7 +133,7 @@ const Stake = () => {
                   },
                 ]}
                 layout="vertical"
-                label="Amount"
+                label="unstack"
                 labelCol={{
                   span: 24,
                 }}

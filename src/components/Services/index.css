@@ -1,0 +1,28 @@
+.servie {
+  background: url("../../assets/Topography.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.ser_card {
+  background-color: white;
+  padding: 10px;
+}
+.ser_card {
+  background-color: white;
+  box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 23%);
+  padding: 1em;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  height: 100%;
+}
+.ser_card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+.ser_card img {
+  background-color: #ff8345;
+  padding: 15px;
+  margin-top: 1em;
+}

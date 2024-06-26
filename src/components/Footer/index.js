@@ -1,11 +1,11 @@
 import { Col, Row } from "antd";
 import React from "react";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/LOGOsad 1.png";
 
 const Footer = () => {
   return (
-    <div style={{ paddingTop: "3em" }}>
-      <div className="" style={{ backgroundColor: "white" }}>
+    <div>
+      <div className="" style={{ backgroundColor: "#EDFBF5" }}>
         <div className="container">
           <Row style={{ paddingTop: "1em" }}>
             <Col xs={24} md={6} sm={24} lg={6}>
