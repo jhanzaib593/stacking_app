@@ -7,7 +7,6 @@ import Unstake from "./components/Unstake";
 import DeFi from "./page/defi";
 import Referral from "./page/referral";
 import Main from "./page/main";
-import Home from "./page/home";
 
 const router = createBrowserRouter([
   {

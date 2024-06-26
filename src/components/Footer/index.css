@@ -1,0 +1,26 @@
+.foot_meau {
+  list-style: none;
+  padding: 1em 0;
+}
+.foot_meau li {
+  padding: 5px 0;
+}
+.foot_meau li a {
+  color: black !important;
+}
+
+/* SocialMediaIcons.css */
+
+.social_icon {
+  transition: transform 0.3s ease;
+}
+
+.social_icon:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  border-top: 1px solid #cae696;
+  text-align: center;
+  padding: 2em 0;
+}

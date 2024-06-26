@@ -58,14 +58,15 @@
     0px 15px 9px 0px rgba(23, 23, 23, 0.02),
     0px 27px 11px 0px rgba(23, 23, 23, 0.01),
     0px 42px 12px 0px rgba(23, 23, 23, 0);
-  color: black;
+  color: white;
+  font-weight: 500;
   width: 130px;
   height: 44px;
 }
 .h_btn2:hover {
   border: #cae696 !important;
   background: var(--Primary, #cae696) !important;
-  color: black !important;
+  color: white !important;
 }
 @media only screen and (min-width: 100px) and (max-width: 991px) {
   .nav {

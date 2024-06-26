@@ -118,7 +118,7 @@ const Stake = () => {
   return (
     <div
       className="container"
-      style={{ display: "flex", justifyContent: "center", paddingTop: "2em" }}
+      style={{ display: "flex", justifyContent: "center", padding: "2em 0" }}
     >
       <Row>
         <Col span={6}></Col>
