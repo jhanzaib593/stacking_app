@@ -96,12 +96,22 @@ const Stake = () => {
     <div className="container" style={{ padding: "2em 0" }}>
       <div className="st_ma">
         <div style={{ paddingBottom: "2em" }}>
-          <label>Unstake</label>
-          <Input
-            prefix={<img src={logo} alt="" width={28} height={28} />}
-            style={{ padding: 10 }}
-            placeholder="Amount"
-          />
+          <Form.Item
+            label="Unstake"
+            layout="vertical"
+            labelCol={{
+              span: 24,
+            }}
+            wrapperCol={{
+              span: 24,
+            }}
+          >
+            <Input
+              prefix={<img src={logo} alt="" width={28} height={28} />}
+              style={{ padding: 10 }}
+              placeholder="Amount"
+            />
+          </Form.Item>
         </div>
         <Button className="st_btn">Connect Wallet</Button>
 
