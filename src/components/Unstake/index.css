@@ -14,3 +14,7 @@
   background-color: #9ccb3c33 !important;
   color: black !important;
 }
+.text_input::placeholder {
+  color: rgb(235, 19, 19) !important;
+  font-weight: 900;
+}

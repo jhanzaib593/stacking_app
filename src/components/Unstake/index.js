@@ -80,6 +80,7 @@ const Stake = () => {
 
   const handleCurrencyChange = (value) => {
     setSelectedCurrency(value);
+    setInputValue(""); // Reset input value when the currency changes
   };
 
   const columns = [
@@ -110,7 +111,7 @@ const Stake = () => {
             name="unstake"
             rules={[
               {
-                message: "Select Token  ",
+                message: "Select Token",
               },
             ]}
             layout="vertical"
@@ -128,7 +129,7 @@ const Stake = () => {
               style={{ height: 50, fontSize: 20, marginTop: 10 }}
               addonBefore={
                 <Select
-                  defaultValue={selectedCurrency}
+                  value={selectedCurrency}
                   onChange={handleCurrencyChange}
                   className="selected"
                 >
@@ -138,7 +139,6 @@ const Stake = () => {
                   <Option value="TonStak">
                     <img src={TonStak} alt="TonStak" height={20} width={20} />
                   </Option>
-
                   <Option value="BEMO">
                     <img src={BEMO} alt="BEMO" height={20} width={20} />
                   </Option>
@@ -147,9 +147,12 @@ const Stake = () => {
                   </Option>
                 </Select>
               }
-              value={inputValue}
+              // value={selectedCurrency}
+              placeholder={selectedCurrency}
+              // defaultValue={selectedCurrency}
               onChange={handleInputChange}
-              placeholder="Select Token "
+              readOnly
+              className="text_input"
             />
           </Form.Item>
         </Form>
