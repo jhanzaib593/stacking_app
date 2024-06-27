@@ -85,7 +85,15 @@ const Header = () => {
                       `nav_link ${isActive ? "nav_active" : ""}`
                     }
                   >
-                    <HomeOutlined /> Stake
+                    Home
+                  </NavLink>
+                  <NavLink
+                    to={"/app"}
+                    className={({ isActive }) =>
+                      `nav_link ${isActive ? "nav_active" : ""}`
+                    }
+                  >
+                    Stake
                   </NavLink>
                   <NavLink
                     to={"/defi"}
@@ -93,7 +101,7 @@ const Header = () => {
                       `nav_link ${isActive ? "nav_active" : ""}`
                     }
                   >
-                    <UsergroupAddOutlined /> DeFi
+                    DeFi
                   </NavLink>
                   <NavLink
                     to={"/referral"}
@@ -101,7 +109,7 @@ const Header = () => {
                       `nav_link ${isActive ? "nav_active" : ""}`
                     }
                   >
-                    <YoutubeOutlined /> Referral
+                    Referral
                   </NavLink>
                 </div>
               </Drawer>

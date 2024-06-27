@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(
+  /* background: radial-gradient(
       farthest-corner at 10% 10%,
       #cae696 5%,
       #f4f4f4 30%,
@@ -11,8 +11,9 @@ body {
       #f2f9ea 30%,
       #f4f4f400 30%
     ),
-    #f4f4f4;
+    #f4f4f4; */
   background-attachment: fixed;
+  background-color: white;
 }
 * {
   margin: 0;
