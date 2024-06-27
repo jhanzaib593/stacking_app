@@ -34,7 +34,7 @@ const Home = () => {
                 }
                 to="/app/unstake"
               >
-                UnStake
+                Unstake
               </NavLink>
             </div>
             <Outlet />

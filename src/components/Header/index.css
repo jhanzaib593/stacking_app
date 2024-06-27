@@ -23,10 +23,12 @@
 }
 .nav_link:hover {
   background-color: #cae696;
+  padding: 7px 8px;
 }
 .nav_active {
   background-color: #9ccc3c;
   color: white !important;
+  padding: 7px 8px;
 }
 .h_btn {
   padding: 4px 0;

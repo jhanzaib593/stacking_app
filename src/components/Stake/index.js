@@ -11,7 +11,7 @@ const { Option } = Select;
 
 const Stake = () => {
   const [inputValue, setInputValue] = useState("");
-  const [selectedCurrency, setSelectedCurrency] = useState("TonStak");
+  const [selectedCurrency, setSelectedCurrency] = useState("HIPO");
   const [data, setData] = useState([
     {
       key: "1",
@@ -29,6 +29,10 @@ const Stake = () => {
       text: "0.015 TON",
     },
   ]);
+
+  const handleCurrencyChange = (value) => {
+    setSelectedCurrency(value);
+  };
 
   useEffect(() => {
     const newData = data.map((item) => {
@@ -76,10 +80,6 @@ const Stake = () => {
           : item
       )
     );
-  };
-
-  const handleCurrencyChange = (value) => {
-    setSelectedCurrency(value);
   };
 
   const columns = [
@@ -139,14 +139,15 @@ const Stake = () => {
                   onChange={handleCurrencyChange}
                   className="selected"
                 >
-                  <Option value="TonStak">
+                  <Option value="HIPO">
                     <img src={Hipo} alt="Hipo" height={20} width={20} />
                   </Option>
-                  <Option value="HIPO">
-                    <img src={BEMO} alt="BEMO" height={20} width={20} />
-                  </Option>
-                  <Option value="BEMO">
+                  <Option value="TonStak">
                     <img src={TonStak} alt="TonStak" height={20} width={20} />
+                  </Option>
+
+                  <Option value="BEMO">
+                    <img src={BEMO} alt="BEMO" height={20} width={20} />
                   </Option>
                   <Option value="Tonwhales">
                     <img src={Tonhub} alt="Tonhub" height={20} width={20} />
