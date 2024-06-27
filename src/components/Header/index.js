@@ -3,12 +3,7 @@ import "./index.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/LOGOsad 1.png";
 import React, { useState } from "react";
-import {
-  MenuFoldOutlined,
-  HomeOutlined,
-  UsergroupAddOutlined,
-  YoutubeOutlined,
-} from "@ant-design/icons";
+import { MenuFoldOutlined } from "@ant-design/icons";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -18,8 +13,8 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
-  const [top, setTop] = React.useState(0);
-  console.log(setTop);
+  // const [top, setTop] = React.useState(0);
+  // console.log(setTop);
   return (
     <>
       {/* <Affix offsetTop={top}> */}
@@ -51,14 +46,7 @@ const Header = () => {
                 >
                   Stake
                 </NavLink>
-                <NavLink
-                  to={"/defi"}
-                  className={({ isActive }) =>
-                    `nav_link ${isActive ? "nav_active" : ""}`
-                  }
-                >
-                  DeFi
-                </NavLink>
+
                 <NavLink
                   to={"/referral"}
                   className={({ isActive }) =>
@@ -66,6 +54,14 @@ const Header = () => {
                   }
                 >
                   Referral
+                </NavLink>
+                <NavLink
+                  to={"/defi"}
+                  className={({ isActive }) =>
+                    `nav_link ${isActive ? "nav_active" : ""}`
+                  }
+                >
+                  dApp RoadMap
                 </NavLink>
               </div>
             </Col>
@@ -95,14 +91,7 @@ const Header = () => {
                   >
                     Stake
                   </NavLink>
-                  <NavLink
-                    to={"/defi"}
-                    className={({ isActive }) =>
-                      `nav_link ${isActive ? "nav_active" : ""}`
-                    }
-                  >
-                    DeFi
-                  </NavLink>
+
                   <NavLink
                     to={"/referral"}
                     className={({ isActive }) =>
@@ -110,6 +99,14 @@ const Header = () => {
                     }
                   >
                     Referral
+                  </NavLink>
+                  <NavLink
+                    to={"/defi"}
+                    className={({ isActive }) =>
+                      `nav_link ${isActive ? "nav_active" : ""}`
+                    }
+                  >
+                    dApp RoadMap
                   </NavLink>
                 </div>
               </Drawer>

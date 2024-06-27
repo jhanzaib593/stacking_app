@@ -1,0 +1,16 @@
+.wappers {
+  background: radial-gradient(
+      farthest-corner at 10% 10%,
+      #ffffff 5%,
+      #f4f4f4 30%,
+      #f4f4f400 30%
+    ),
+    radial-gradient(
+      farthest-corner at 90% 70%,
+      #c9e29b 5%,
+      #f2f9ea 30%,
+      #f4f4f400 30%
+    ),
+    #f4f4f4;
+  background-attachment: fixed;
+}

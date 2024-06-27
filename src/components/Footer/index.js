@@ -32,7 +32,7 @@ const Footer = () => {
                   <NavLink to={"/app"}>Stake</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/defi"}>DeFi</NavLink>
+                  <NavLink to={"/defi"}>DApp Roadmaps</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/referral"}>Referral</NavLink>

@@ -2,18 +2,26 @@
   color: rgba(28, 29, 64, 1) !important;
 }
 .nav_btn {
-  background-color: #cae696;
   text-decoration: none;
   padding: 10px 37px;
-  margin: 0 10px;
   color: black;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 11px;
+  border-radius: 50px;
   transition: 0.5s ease-in-out;
+}
+.nav_btn:hover {
+  color: black !important;
 }
 .nav-active {
   background-color: #9ccc3c;
-  color: white;
-  transition: 0.5s ease-in-out;
+  color: white !important;
+  transition: 1s ease-in-out;
+}
+.nav_slider {
+  background-color: white;
+  border-radius: 50px;
+  height: 62px;
+  padding: 18px;
+  margin: 0 6em;
 }
