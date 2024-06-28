@@ -2,10 +2,12 @@ import React from "react";
 import "./index.css";
 import { NavLink, Outlet } from "react-router-dom";
 import { Col, Row } from "antd";
+import TransportMethod from "./a";
 
 const Home = () => {
   return (
     <div className="container">
+      {/* <TransportMethod /> */}
       <Row>
         <Col xs={24} sm={24} md={24} lg={12} style={{ margin: "auto" }}>
           <h1 style={{ fontSize: "4em", fontWeight: 800, padding: 10 }}>

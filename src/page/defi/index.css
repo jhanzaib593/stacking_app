@@ -1,23 +1,251 @@
-*,
-::before,
-::after {
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.roadmap-content{
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.roadmap-detail{
+  width: 40%;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+    /* padding-top: 7rem; */
+    justify-content: center;
+}
+.roadmap-main{
+  padding: 2rem;
+  padding-inline: 5rem;
+}
+.roadmap-title{
+  font-size: 60px;
+  font-weight: 900;
+}
+ .why-us-title{
+  font-size: 45px;
+  font-weight: 900;
+}
+.roadmap-title span, .why-us-title span{
+  color: #d3ff82;
+}
+.roadmap-overflow{
+  flex: 1;
+ 
+}
+
+.roadmap-overflow::-webkit-scrollbar {
+  display: none;
+}
+.roadmap{
+  position: relative;
+  flex: 1;
+  max-height: 100%;
+      display: flex;
+        flex-direction: column;
+}
+.vertical-line{
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 14.5rem;
+  top: 5px;
+  z-index: -2;
+  transform: translateX(-25%);
+  border-radius: 33%;
+}
+
+
+.phase-content{
+  top: -52.5px;
+  position: absolute;
+  background-color: #efebe5;
+  width: 240px;
+  height: 150px;
+  border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 38px;
+
+  z-index: -1;
+}
+.left.phase-content{
+  left: -55px;
+  transform: translate(0px, 0px) scale(0.3, 0.3) skew(35deg, 0deg);
+}
+.right.phase-content{
+  right: -55px;
+  transform: translate(0px, 0px) scale(0.3, 0.3) skew(-35deg, 0deg);
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+      text-align: center;
+  /* display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+  padding: 2rem;
+  padding-inline: 5rem; */
+}
+
+.why-choose-hipo{
+  padding: 5rem;
+}
+
+.whyuscard{
+
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+width: 25%;
+  margin: 30px 10px;
+  /* display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  width: 300px; */
+
+}
+.icon{
+  /* height: 67px;
+  width: 67px;
+  min-width: 67px; */
+  /* border-radius: 50%; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+}
+.icon-image{
+  height: auto;
+}
+.card-description{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin-right: 3rem; */
+    align-items: center;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-text{
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .roadmap-content{
+        max-height: 500px;
+     height: 500px;
+  }
+  .roadmap-overflow{
+    max-height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+  
+    .roadmap {
+      padding-left: 3rem;
+    }
+}
+@media (max-width: 1024px) {
+  .roadmap-content{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .roadmap-detail{
+    width: 100%;
+    height: auto;
+  }
+  .cards{
+    grid-template-columns: auto;
+  }
+  .why-choose-hipo {
+    padding: 3rem;
+}
+.roadmap-title{
+  margin-bottom: 1rem;
+}
+.vertical-line{
+  left: 50%;
+  transform: translateX(-20%);
+}
+.roadmap-main {
+  padding-inline: 4rem;
+}
+}
+*, ::before, ::after {
   --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
+--tw-translate-y: 0;
+--tw-rotate: 0;
+--tw-skew-x: 0;
+--tw-skew-y: 0;
+--tw-scale-x: 1;
+--tw-scale-y: 1;
 }
 
 ::backdrop {
   --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
+--tw-translate-y: 0;
+--tw-rotate: 0;
+--tw-skew-x: 0;
+--tw-skew-y: 0;
+--tw-scale-x: 1;
+--tw-scale-y: 1;
 }
 
 .flex {
@@ -51,7 +279,7 @@
 .absolute {
   position: absolute;
 }
-.relative {
+.relative{
   position: relative;
 }
 .mt-2 {
@@ -69,24 +297,22 @@
 
 .translate-x-6 {
   --tw-translate-x: 1.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rounded-2xl {
   border-radius: 1rem;
 }
-.bg-primary {
+.bg-primary{
   background-color: #baff74;
 }
 .bg-primaryGrey {
   --tw-bg-opacity: 1;
   background-color: rgb(239 235 229 / var(--tw-bg-opacity));
 }
-.text-primary {
+.text-primary{
   color: #26811a;
 }
-.bg-secondary {
+.bg-secondary{
   background-color: #26811a;
 }
 .pt-6 {
@@ -151,7 +377,7 @@
 .h-\[5px\] {
   height: 5px;
 }
-.block {
+.block{
   display: block;
 }
 .hidden {
@@ -171,263 +397,49 @@
   --tw-text-opacity: 1;
   color: rgb(119 100 100 / var(--tw-text-opacity));
 }
+.w-fit-content{
+  width: fit-content;
+}
 @media (min-width: 1024px) {
   .lg\:right-0 {
-    right: 0px;
-  }
+      right: 0px;
+    }
   .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
+      margin-bottom: 0px;
+    }
   .lg\:px-\[19px\] {
-    padding-left: 19px;
-    padding-right: 19px;
-  }
+      padding-left: 19px;
+      padding-right: 19px;
+    }
   .lg\:hidden {
-    display: none;
-  }
+      display: none;
+    }
   .lg\:block {
-    display: block;
-  }
-  .lg\:w-fit-content {
-    width: fit-content;
+      display: block;
+    }
+  .lg\:w-fit-content{
+        width: fit-content;
   }
   .lg\:relative {
-    position: relative;
-  }
+      position: relative;
+    }
   .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      --tw-translate-x: 0px;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
   .lg\:text-\[25px\] {
-    font-size: 25px;
-  }
+      font-size: 25px;
+    }
   .lg\:text-\[20px\] {
-    font-size: 20px;
-  }
-  .lg\:w-\[50px\] {
-    width: 50px;
-  }
-  .lg\:w-\[48\%\] {
-    width: 48%;
-  }
-}
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Poppins", sans-serif;
-}
-.roadmap-content {
-  display: flex;
-  gap: 0;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-}
-.roadmap-detail {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  /* padding-top: 7rem; */
-  justify-content: center;
-}
-.roadmap-main {
-  padding: 2rem 0;
-  padding-inline: 5rem;
-}
-.roadmap-title {
-  font-size: 60px;
-  font-weight: 900;
-}
-.why-us-title {
-  font-size: 45px;
-  font-weight: 900;
-}
-.roadmap-title span,
-.why-us-title span {
-  color: #d3ff82;
-}
-.roadmap-overflow {
-  flex: 1;
-}
-
-.roadmap-overflow::-webkit-scrollbar {
-  display: none;
-}
-.roadmap {
-  position: relative;
-  flex: 1;
-  max-height: 100%;
-}
-.vertical-line {
-  width: 10px;
-  height: 100%;
-  position: absolute;
-  left: 38.5%;
-  top: 5px;
-  z-index: -2;
-  transform: translateX(-25%);
-  border-radius: 33%;
-}
-
-.phase-content {
-  top: -52.5px;
-  position: absolute;
-  background-color: #efebe5;
-  width: 240px;
-  height: 150px;
-  border: 0px solid rgba(100, 100, 100, 1);
-  border-radius: 38px;
-
-  z-index: -1;
-}
-.left.phase-content {
-  left: -55px;
-  transform: translate(0px, 0px) scale(0.3, 0.3) skew(35deg, 0deg);
-}
-.right.phase-content {
-  right: -55px;
-  transform: translate(0px, 0px) scale(0.3, 0.3) skew(-35deg, 0deg);
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  /* display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 2rem;
-    padding: 2rem;
-    padding-inline: 5rem; */
-}
-
-.why-choose-hipo {
-  padding: 5rem;
-}
-
-.whyuscard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 25%;
-  margin: 30px 10px;
-  /* display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-direction: column;
-    width: 300px; */
-}
-.icon {
-  /* height: 67px;
-    width: 67px;
-    min-width: 67px; */
-  /* border-radius: 50%; */
-  /* display: flex; */
-  /* align-items: center;
-    justify-content: center; */
-}
-.icon-image {
-  height: auto;
-}
-.card-description {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  /* margin-right: 3rem; */
-  align-items: center;
-}
-.card-title {
-  font-size: 20px;
-  font-weight: 700;
-}
-.card-text {
-  font-size: 1rem;
-  font-weight: 400;
-}
-@media (min-width: 1024px) {
-  .roadmap-content {
-    max-height: 500px;
-    height: 500px;
-  }
-  .roadmap-overflow {
-    max-height: 100%;
-    overflow-y: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
-  }
-}
-@media (max-width: 1024px) {
-  .roadmap-content {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-  .roadmap-detail {
-    width: 100%;
-    height: auto;
-  }
-  .cards {
-    grid-template-columns: auto;
-  }
-  .why-choose-hipo {
-    padding: 3rem;
-  }
-  .roadmap-title {
-    margin-bottom: 1rem;
-  }
-  .vertical-line {
-    left: 50%;
-    transform: translateX(-20%);
-  }
+      font-size: 20px;
+    }
+    .lg\:w-\[50px\] {
+      width: 50px;
+    }
+    .lg\:w-\[48\%\] {
+      width: 48%;
+    }
+    .lg\:w-\[60\%\] {
+      width: 60%;
+    }
 }

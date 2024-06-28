@@ -9,9 +9,9 @@ function DeFi() {
     <div>
       <Header />
       <div className="roadmap-main">
-        <h1 style={{ fontWeight: 800 }}>
-          <span style={{ color: "#9ccc3c" }}>D</span>App Roadmap
-        </h1>
+        <p className="roadmap-title">
+          <span>yeild</span>Ton
+        </p>
         <div className="roadmap-content">
           <div className="roadmap-detail">
             <h1
